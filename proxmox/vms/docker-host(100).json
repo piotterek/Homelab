@@ -1,0 +1,21 @@
+{
+  "service_name": "Node-RED",
+  "description": "Node-RED w kontenerze Docker. Serwis do tworzenia przepływów automatyzacji, dashboardów i integracji IoT. Uruchamia się automatycznie przy starcie systemu i przechowuje dane w wolumenie Docker.",
+  "docker_run_command": "docker run -d --name nodered -p 1880:1880 -v nodered_data:/data --restart unless-stopped nodered/node-red",
+  "ports": {
+    "host": 1880,
+    "container": 1880
+  },
+  "volume": {
+    "host_volume_name": "nodered_data",
+    "container_path": "/data",
+    "purpose": "Przechowywanie flows i konfiguracji Node-RED"
+  },
+  "restart_policy": "unless-stopped",
+  "notes": [
+    "Kontener działa w tle (-d), nie blokuje terminala.",
+    "Dane są przechowywane w wolumenie Docker, więc przetrwają restart kontenera.",
+    "Jeśli chcesz widzieć logi Node-RED w terminalu, możesz użyć 'docker logs -f nodered'.",
+    "Dostęp do Node-RED przez przeglądarkę: http://<IP_SERWERA>:1880"
+  ]
+}
