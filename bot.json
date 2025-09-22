@@ -1,0 +1,146 @@
+[
+
+    {
+    "type": "pc",
+    "role": "Główny komputer",
+    "operating_system": "Fedora Workstation",
+    "mother_board": "GIGABYTE B550M AORUS ELITE",
+    "cpu": "Ryzen 5 5600G",
+    "drive": [
+      {
+        "type": "NVMe M.2 SSD",
+        "size": "1TB",
+        "function": "OS / dane"
+      }
+    ],
+    "ram": [
+      {
+        "type": "DDR4",
+        "size": "16GB"
+      }
+    ]
+  }
+  {
+    "type": "pc",
+    "role": "Hypervisor",
+    "operating_system": "Proxmox",
+    "mother_board": "Asus ROG STRIX B650E-F GAMING WIFI",
+    "cpu": "Ryzen 7 7700",
+    "drive": [
+      {
+        "type": "NVMe M.2 SSD",
+        "size": "2TB",
+        "function": "OS / dane"
+      }
+    ],
+    "ram": [
+      {
+        "type": "DDR5",
+        "size": "32GB"
+      }
+    ]
+    "services": {
+      "virtual_machines": [
+        {
+          "role": "Host kontenerów dockera",
+          "resources": {
+            "cpu": "2 vCPU",
+            "ram": "4GB",
+            "disk": "32GB"
+          }
+        }
+      ],
+      "lxc_containers": []
+    }
+  },
+  {
+    "type": "pc",
+    "role": "serwer plików / serwer multimediów",
+    "operating_system": "Open Media Vault",
+    "mother_board": "własnościowa",
+    "cpu": "Intel Celeron G540",
+    "drive": [
+      {
+        "type": "mSATA SSD",
+        "size": "64GB",
+        "function": "OS"
+      },
+      {
+        "type": "HDD",
+        "size": "1TB",
+        "function": "Data"
+      },
+      {
+        "type": "HDD",
+        "size": "500GB",
+        "function": "Data"
+      }
+    ],
+    "ram": [
+      {
+        "type": "DDR3",
+        "size": "4GB"
+      }
+    ]
+  },
+  {
+    "type": "laptop",
+    "role": "automatyzacja",
+    "operating_system": "Debian",
+    "mother_board": "Asus X541NA",
+    "cpu": "Celeron N3350",
+    "drive": [
+      {
+        "type": "HDD",
+        "size": "500GB",
+        "function": "OS / dane"
+      }
+    ],
+    "ram": [
+      {
+        "type": "DDR3",
+        "size": "4GB"
+      }
+    ]
+  },
+  {
+    "type": "network_device",
+    "role": "router / firewall",
+    "operating_system": "RouterOS",
+    "model": "Mikrotik RB750GR3",
+    "mother_board": "Nie dotyczy",
+    "cpu": "Nie dotyczy",
+    "drive": [],
+    "ram": []
+  },
+  {
+    "type": "network_device",
+    "role": "switch",
+    "operating_system": "nie dotyczy",
+    "model": "TP-Link TL-SG108PE",
+    "mother_board": "Nie dotyczy",
+    "cpu": "Nie dotyczy",
+    "drive": [],
+    "ram": []
+  },
+  {
+    "type": "network_device",
+    "role": "access point",
+    "operating_system": "nie dotyczy",
+    "model": "TP-Link TL-WA1201",
+    "mother_board": "Nie dotyczy",
+    "cpu": "Nie dotyczy",
+    "drive": [],
+    "ram": []
+  },
+  {
+    "type": "network_device",
+    "role": "konwerter światłowodowy",
+    "operating_system": "nie dotyczy",
+    "model": "Halny HL 1GE",
+    "mother_board": "Nie dotyczy",
+    "cpu": "Nie dotyczy",
+    "drive": [],
+    "ram": []
+  }
+]
