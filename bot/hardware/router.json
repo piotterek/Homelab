@@ -1,0 +1,7 @@
+{
+  "name": "router",
+  "type": "network device",
+  "operating_system": "RouterOS",
+  "role": "router and firewall",
+  "model": "Mikrotik RB750GR3"
+}
