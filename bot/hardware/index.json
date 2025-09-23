@@ -30,8 +30,8 @@
     "path": "bot/hardware/ap.json"
   }
   {
-    "name": "Konwerter światłowodowy",
+    "name": "converter",
     "ip_address": null,
-    "path": "bot/hardware/konwerter.json"
+    "path": "bot/hardware/converter.json"
   }
 ]
