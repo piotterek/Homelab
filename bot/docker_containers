@@ -1,0 +1,39 @@
+[
+  {
+    "name": "Node-RED",
+    "description": "Tworzenie przepływów automatyzacji.",
+    "docker_run_command": "docker run -d --name nodered -p 1880:1880 -v nodered_data:/data --restart unless-stopped nodered/node-red",
+    "port": 1880
+  },
+  {
+    "name": "n8n",
+    "description": "Automatyzacje z AI",
+    "docker_run_command": "docker run -d --name n8n -p 5678:5678 -v ~/n8n/data:/home/node/.n8n -e N8N_SECURE_COOKIE=false --restart unless-stopped n8nio/n8n:latest",
+    "port": 5678
+  },
+  {
+    "name": "Uptime Kuma",
+    "description": "Monitorowanie usług i serwerów z panelu webowego i powiadamianie.",
+    "docker_run_command": "docker run -d --restart=unless-stopped -p 3001:3001 -v uptime-kuma:/app/data -v /var/run/docker.sock:/var/run/docker.sock --name uptime-kuma louislam/uptime-kuma:1",
+    "port": 3001
+  },
+  {
+    "name": "Homarr",
+    "description": "Tworzenie dashboardów",
+    "docker_run_command": "docker run --name homarr --restart unless-stopped -p 7575:7575 -v /var/run/docker.sock:/var/run/docker.sock -v ~/homarr/appdata:/appdata -e SECRET_ENCRYPTION_KEY='XYZ' -d ghcr.io/homarr-labs/homarr:latest",
+    "note": "do wygenerowania klucz użyj polecenia 'openssl rand -hex 32'",
+    "port": 7575
+  },
+  {
+    "name": "Twingate Connector",
+    "description": "Twingate Connector do zdalnego dostępu do sieci homelab.",
+    "docker_run_command": null,
+    "port": null
+  },
+  {
+    "name": "Cloudflare tunnel",
+    "description": "Udostepnianie usług do internetu",
+    "docker_run_command": null,
+    "port": null
+  }
+]
