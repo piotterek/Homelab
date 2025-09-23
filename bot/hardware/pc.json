@@ -1,0 +1,30 @@
+{
+  "name": "computer",
+  "type": "desktop",
+  "operating_system": "Fedora Workstation",
+  "role": "main computer",
+  "spec": {
+    "motherboard": "GIGABYTE B550M AORUS ELITE",
+    "cpu": {
+      "model": "AMD Ryzen 5 5600G",
+      "cores": 6,
+      "threads": 12,
+      "base_clock_ghz": 3.9,
+      "boost_clock_ghz": 4.4
+    },
+    "gpu": "integrated",
+    "drives": [
+      {
+        "type": "NVMe M.2 SSD",
+        "size_gb": 1000,
+        "function": "OS + data"
+      }
+    ],
+    "ram": {
+      "type": "DDR4",
+      "modules": 2,
+      "size_gb": 16,
+      "clock_mhz": 3600
+    }
+  }
+}
