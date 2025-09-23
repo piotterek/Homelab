@@ -1,0 +1,30 @@
+{
+  "name": "hypervisor",
+  "type": "desktop",
+  "operating_system": "Proxmox VE",
+  "role": "hypervisor",
+  "spec": {
+    "motherboard": "ASUS ROG STRIX B650E-F GAMING WIFI",
+    "cpu": {
+      "model": "AMD Ryzen 7 7700",
+      "cores": 8,
+      "threads": 16,
+      "base_clock_ghz": 3.8,
+      "boost_clock_ghz": 5.3
+    },
+    "gpu": "integrated",
+    "drives": [
+      {
+        "type": "NVMe M.2 SSD",
+        "size_gb": 2000,
+        "function": "OS + data"
+      }
+    ],
+    "ram": {
+      "type": "DDR5",
+      "modules": 2,
+      "size_gb": 32,
+      "clock_mhz": 6400
+    }
+  }
+}
