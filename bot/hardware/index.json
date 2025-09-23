@@ -1,0 +1,37 @@
+[
+  {
+    "name": "computer",
+    "ip_address": "10.0.0.214",
+    "path": "bot/hardware/pc.json"
+  }
+  {
+    "name": "hypervisor",
+    "ip_address": "10.0.0.217",
+    "path": "bot/hardware/hv.json"
+  }
+  {
+    "name": "NAS",
+    "ip_address": "10.0.0.10",
+    "path": "bot/hardware/nas.json"
+  }
+  {
+    "name": "router",
+    "ip_address": "10.0.0.1",
+    "path": "bot/hardware/router.json"
+  }
+  {
+    "name": "switch",
+    "ip_address": "10.0.0.2",
+    "path": "bot/hardware/switch.json"
+  }
+  {
+    "name": "access point",
+    "ip_address": "10.0.0.3",
+    "path": "bot/hardware/ap.json"
+  }
+  {
+    "name": "Konwerter światłowodowy",
+    "ip_address": null,
+    "path": "bot/hardware/konwerter.json"
+  }
+]
