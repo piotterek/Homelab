@@ -1,0 +1,105 @@
+[
+  {
+    "name": "computer",
+    "type": "desktop",
+    "operating_system": "Fedora Workstation",
+    "role": "main computer",
+    "ip_address": "10.0.0.214",
+    "spec": {
+      "motherboard": "GIGABYTE B550M AORUS ELITE",
+      "cpu": {
+        "model": "AMD Ryzen 5 5600G",
+        "cores": 6,
+        "threads": 12,
+        "base_clock_ghz": 3.9,
+        "boost_clock_ghz": 4.4
+      },
+      "gpu": "integrated",
+      "drives": [
+        {
+          "type": "NVMe M.2 SSD",
+          "size_gb": 1000,
+          "function": "OS + data"
+        }
+      ],
+      "ram": {
+        "type": "DDR4",
+        "modules": 2,
+        "size_gb": 16,
+        "clock_mhz": 3600
+      }
+    }
+  },
+  {
+    "name": "hypervisor",
+    "type": "desktop",
+    "operating_system": "Proxmox VE",
+    "role": "hypervisor",
+    "ip_address": "10.0.0.217",
+    "spec": {
+      "motherboard": "ASUS ROG STRIX B650E-F GAMING WIFI",
+      "cpu": {
+        "model": "AMD Ryzen 7 7700",
+        "cores": 8,
+        "threads": 16,
+        "base_clock_ghz": 3.8,
+        "boost_clock_ghz": 5.3
+      },
+      "gpu": "integrated",
+      "drives": [
+        {
+          "type": "NVMe M.2 SSD",
+          "size_gb": 2000,
+          "function": "OS + data"
+        }
+      ],
+      "ram": {
+        "type": "DDR5",
+        "modules": 2,
+        "size_gb": 32,
+        "clock_mhz": 6400
+      }
+    }
+  },
+  {
+    "name": "nas",
+    "type": "desktop",
+    "operating_system": "OpenMediaVault",
+    "role": "file and multimedia server",
+    "ip_address": "10.0.0.10",
+    "spec": {
+      "motherboard": "proprietary POSservice",
+      "cpu": {
+        "model": "Intel Celeron G540",
+        "cores": 2,
+        "threads": 2,
+        "base_clock_ghz": 2.5,
+        "boost_clock_ghz": null
+      },
+      "gpu": "integrated",
+      "drives": [
+        {
+          "type": "mSATA SSD",
+          "size_gb": 64,
+          "function": "OS"
+        },
+        {
+          "type": "HDD 3.5 inch",
+          "size_gb": 1000,
+          "function": "data"
+        },
+        {
+          "type": "HDD 3.5 inch",
+          "size_gb": 500,
+          "function": "data"
+        }
+      ],
+      "ram": {
+        "type": "DDR3",
+        "modules": 2,
+        "size_gb": 4,
+        "clock_mhz": 1333
+      }
+    }
+  }
+]
