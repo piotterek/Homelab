@@ -1,0 +1,7 @@
+{
+  "name": "switch",
+  "type": "network device",
+  "operating_system": null,
+  "role": "switch",
+  "model": "TP-Link TL-SG108PE"
+}
