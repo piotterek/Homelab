@@ -1,0 +1,40 @@
+{
+  "name": "nas",
+  "type": "desktop",
+  "operating_system": "OpenMediaVault",
+  "role": "file and multimedia server",
+  "spec": {
+    "motherboard": "proprietary POSservice",
+    "cpu": {
+      "model": "Intel Celeron G540",
+      "cores": 2,
+      "threads": 2,
+      "base_clock_ghz": 2.5,
+      "boost_clock_ghz": null
+    },
+    "gpu": "integrated",
+    "drives": [
+      {
+        "type": "mSATA SSD",
+        "size_gb": 64,
+        "function": "OS"
+      },
+      {
+        "type": "HDD 3.5 inch",
+        "size_gb": 1000,
+        "function": "data"
+      },
+      {
+        "type": "HDD 3.5 inch",
+        "size_gb": 500,
+        "function": "data"
+      }
+    ],
+    "ram": {
+      "type": "DDR3",
+      "modules": 2,
+      "size_gb": 4,
+      "clock_mhz": 1333
+    }
+  }
+}
