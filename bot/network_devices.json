@@ -1,0 +1,34 @@
+[
+  {
+    "name": "router",
+    "type": "network device",
+    "operating_system": "RouterOS",
+    "role": "router and firewall",
+    "ip_address": "10.0.0.1",
+    "model": "Mikrotik RB750GR3"
+  },
+  {
+    "name": "switch",
+    "type": "network device",
+    "operating_system": null,
+    "role": "switch",
+    "ip_address": "10.0.0.2",
+    "model": "TP-Link TL-SG108PE"
+  },
+  {
+    "name": "Access Point",
+    "type": "network device",
+    "operating_system": null,
+    "role": "access point wi-fi",
+    "ip_address": "10.0.0.3",
+    "model": "TP-Link TL-WA1201"
+  },
+  {
+    "name": "Fiber media converter",
+    "type": "network device",
+    "operating_system": null,
+    "role": "fiber media converter",
+    "ip_address": null,
+    "model": "Halny HL 1GE"
+  }
+]
