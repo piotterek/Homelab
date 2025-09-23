@@ -34,7 +34,7 @@
     "name": "hypervisor",
     "type": "desktop",
     "operating_system": "Proxmox VE",
-    "role": "hypervisor",
+    "role": "hypervisor - hosting virtual machines and lxc containers",
     "ip_address": "10.0.0.217",
     "spec": {
       "motherboard": "ASUS ROG STRIX B650E-F GAMING WIFI",
