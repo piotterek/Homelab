@@ -9,5 +9,27 @@
     "drive_size_gb": 32,
     "network": "vmbr0",
     "ip_address": "10.0.0.201"
+  },
+  {
+    "name": "web-server",
+    "id": 101,
+    "operating_system": "Ubuntu 24.04",
+    "role": "Hosting web applications",
+    "vcpu": 4,
+    "ram_size_gb": 8,
+    "drive_size_gb": 64,
+    "network": "vmbr0",
+    "ip_address": "10.0.0.202"
+  },
+  {
+    "name": "db-server",
+    "id": 102,
+    "operating_system": "Debian 12",
+    "role": "Database server (PostgreSQL)",
+    "vcpu": 4,
+    "ram_size_gb": 16,
+    "drive_size_gb": 128,
+    "network": "vmbr0",
+    "ip_address": "10.0.0.203"
   }
 ]
