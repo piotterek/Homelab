@@ -5,7 +5,7 @@
     "operating_system": "Debian 12",
     "role": "Hosting docker containers",
     "vcpu": 2,
-    "ram_size_gb": 4,
+    "ram_size_gb": 6,
     "drive_size_gb": 32,
     "network": "vmbr0",
     "ip_address": "10.0.0.201"
