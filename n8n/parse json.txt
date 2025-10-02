@@ -1,0 +1,11 @@
+code to parse json use this in the "code" node
+
+return items.map(item => {
+    const decodedText = item.json.decoded;
+    try {
+        item.json.parsed = JSON.parse(decodedText);
+    } catch (error) {
+        item.json.parsed = { error: 'Invalid JSON', message: error.message };
+    }
+    return item;
+});
