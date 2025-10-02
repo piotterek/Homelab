@@ -1,6 +1,5 @@
 [
-
-    {
+  {
     "type": "pc",
     "role": "Główny komputer",
     "operating_system": "Fedora Workstation",
@@ -19,7 +18,7 @@
         "size": "16GB"
       }
     ]
-  }
+  },
   {
     "type": "pc",
     "role": "Hypervisor",
@@ -38,7 +37,7 @@
         "type": "DDR5",
         "size": "32GB"
       }
-    ]
+    ],
     "services": {
       "virtual_machines": [
         {
