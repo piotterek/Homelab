@@ -1,14 +1,7 @@
 Code to decode the content of files downloaded from github. Use this in the node "code"
 
 return items.map(item => {
-    // Base64 z pierwszego inputu
-    const base64String = INSERT_CONTENT_HERE;
-
-    // Dekodowanie Base64
-    const decodedString = Buffer.from(base64String, 'base64').toString('utf8');
-
-    // Parsowanie JSON
-    item.json = JSON.parse(decodedString);
-
+    const base64String = $input.first().json.content;
+    item.json.decoded = Buffer.from(base64String, 'base64').toString('utf8');
     return item;
 });
