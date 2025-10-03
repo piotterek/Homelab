@@ -2,7 +2,7 @@
   {
     "name": "Node-RED",
     "description": "Tworzenie przepływów automatyzacji.",
-    "docker_run_command": "docker run -d --name nodered -p 1880:1880 -v nodered_data:/data --restart unless-stopped nodered/node-red",
+    "docker_run_command": "root@docker:/home/piotr# docker run -d --name nodered --network host -p 1880:1880 -v nodered_data:/data --restart unless-stopped nodered/node-red",
     "port": 1880,
     "host": "computer 'computer'"
   },
