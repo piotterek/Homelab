@@ -1,0 +1,4 @@
+To filter out items that are X days older (for example, items from the RSS node) use the Filter node, in the Condition field use: 
+  1. {{ $json.pubDate.toDate().format('yyyy-MM-dd') }} 
+  2. is after or equal to from the Date & Time section 
+  3. {{ $now.minus({days: X = NUMBER_OF_DAYS}).format('yyyy-MM-dd') }}
