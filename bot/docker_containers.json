@@ -9,7 +9,7 @@
   {
     "name": "n8n",
     "description": "Automatyzacje z AI",
-    "docker_run_command": "docker run -d --name n8n -p 5678:5678 -v ~/n8n/data:/home/node/.n8n -e N8N_SECURE_COOKIE=false --restart unless-stopped n8nio/n8n:latest",
+    "docker_run_command": "docker run -d --name n8n --network host -v ~/n8n/data:/home/node/.n8n -e N8N_SECURE_COOKIE=false -e N8N_HOST=10.0.0.201 -e N8N_PROTOCOL=http -e WEBHOOK_URL=http://10.0.0.201:5678/ -e EXECUTIONS_PROCESS=main --restart unless-stopped n8nio/n8n:latest",
     "port": 5678,
     "host": "server 'hypervisor'"
   },
