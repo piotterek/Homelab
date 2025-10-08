@@ -4,14 +4,14 @@
     "description": "Tworzenie przepływów automatyzacji.",
     "docker_run_command": "docker run -d --name nodered --network host -p 1880:1880 -v nodered_data:/data --restart unless-stopped nodered/node-red",
     "port": 1880,
-    "host": "computer 'computer'"
+    "host": "virtual machine 'docker-host'"
   },
   {
     "name": "n8n",
     "description": "Automatyzacje z AI",
     "docker_run_command": "docker run -d --name n8n --network host -v ~/n8n/data:/home/node/.n8n -e N8N_SECURE_COOKIE=false -e N8N_HOST=10.0.0.201 -e N8N_PROTOCOL=http -e WEBHOOK_URL=http://10.0.0.201:5678/ -e EXECUTIONS_PROCESS=main --restart unless-stopped n8nio/n8n:latest",
     "port": 5678,
-    "host": "server 'hypervisor'"
+    "host": "virtual machine 'docker-host'"
   },
   {
     "name": "Uptime Kuma",
@@ -40,6 +40,13 @@
     "description": "Udostepnianie usług do internetu",
     "docker_run_command": null,
     "port": null,
+    "host": "virtual machine 'docker-host'"
+  },
+  {
+    "name": "mosquitto",
+    "description": "broker mqtt",
+    "docker_run_command": "docker run -d --name mqtt-broker -p 1883:1883 -v ~/mosquitto/config/mosquitto.conf:/mosquitto/config/mosquitto.conf -v ~/mosquitto/data:/mosquitto/data -v ~/mosquitto/log:/mosquitto/log eclipse-mosquitto:2.0",
+    "port" 1883,
     "host": "virtual machine 'docker-host'"
   }
 ]
