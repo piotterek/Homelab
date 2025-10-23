@@ -2,43 +2,43 @@
 [
   {
     "name": "Cloudflare tunnel",
-    "type": "docker",
+    "type": "docker container",
     "ip": null,
     "mac": null
   },
   {
     "name": "Homarr",
-    "type": "docker",
+    "type": "docker container",
     "ip": null,
     "mac": null
   },
   {
     "name": "Kuma uptime",
-    "type": "docker",
+    "type": "docker container",
     "ip": null,
     "mac": null
   },
   {
     "name": "Mosquitto",
-    "type": "docker",
+    "type": "docker container",
     "ip": null,
     "mac": null
   },
   {
     "name": "n8n",
-    "type": "docker",
+    "type": "docker container",
     "ip": null,
     "mac": null
   },
   {
     "name": "Node-RED",
-    "type": "docker",
+    "type": "docker container",
     "ip": null,
     "mac": null
   },
   {
     "name": "Twingate connector",
-    "type": "docker",
+    "type": "docker container",
     "ip": null,
     "mac": null
   },
