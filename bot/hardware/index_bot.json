@@ -1,7 +1,7 @@
 
 [
   {
-    "name": "Cloudflare-Tunnel",
+    "name": "Cloudflare tunnel",
     "type": "docker",
     "ip": null,
     "mac": null
@@ -13,7 +13,7 @@
     "mac": null
   },
   {
-    "name": "Uptime-Kuma",
+    "name": "Kuma uptime",
     "type": "docker",
     "ip": null,
     "mac": null
@@ -31,19 +31,19 @@
     "mac": null
   },
   {
-    "name": "NodeRed",
+    "name": "Node-RED",
     "type": "docker",
     "ip": null,
     "mac": null
   },
   {
-    "name": "Twingate-Connector",
+    "name": "Twingate connector",
     "type": "docker",
     "ip": null,
     "mac": null
   },
   {
-    "name": "Access-Point",
+    "name": "Access Point",
     "type": "network device",
     "ip": "10.0.0.3",
     "mac": null
@@ -61,7 +61,7 @@
     "mac": null
   },
   {
-    "name": "Docker-Host",
+    "name": "Docker host",
     "type": "virtual machine",
     "ip": "10.0.0.201",
     "mac": null
