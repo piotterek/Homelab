@@ -1,1 +1,87 @@
 
+[
+  {
+    "name": "Cloudflare-Tunnel",
+    "type": "docker",
+    "ip": null,
+    "mac": null
+  },
+  {
+    "name": "Homarr",
+    "type": "docker",
+    "ip": null,
+    "mac": null
+  },
+  {
+    "name": "Uptime-Kuma",
+    "type": "docker",
+    "ip": null,
+    "mac": null
+  },
+  {
+    "name": "Mosquitto",
+    "type": "docker",
+    "ip": null,
+    "mac": null
+  },
+  {
+    "name": "n8n",
+    "type": "docker",
+    "ip": null,
+    "mac": null
+  },
+  {
+    "name": "NodeRed",
+    "type": "docker",
+    "ip": null,
+    "mac": null
+  },
+  {
+    "name": "Twingate-Connector",
+    "type": "docker",
+    "ip": null,
+    "mac": null
+  },
+  {
+    "name": "Access-Point",
+    "type": "network device",
+    "ip": "10.0.0.3",
+    "mac": null
+  },
+  {
+    "name": "Router",
+    "type": "network device",
+    "ip": "10.0.0.1",
+    "mac": null
+  },
+  {
+    "name": "Switch",
+    "type": "network device",
+    "ip": "10.0.0.2",
+    "mac": null
+  },
+  {
+    "name": "Docker-Host",
+    "type": "virtual machine",
+    "ip": "10.0.0.201",
+    "mac": null
+  },
+  {
+    "name": "NAS",
+    "type": "bare-metal server",
+    "ip": "10.0.0.10",
+    "mac": "00:60:ef:13:4f:de"
+  },
+  {
+    "name": "Proxmox",
+    "type": "bare-metal server",
+    "ip": "10.0.0.217",
+    "mac": "e8:9c:25:78:32:76"
+  },
+  {
+    "name": "PC",
+    "type": "bare-metal server",
+    "ip": "10.0.0.100",
+    "mac": "10:FF:E0:D1:75:90"
+  }
+]
