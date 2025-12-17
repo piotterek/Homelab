@@ -18,6 +18,15 @@
     "operating_system": "Ubuntu 24.04.1 LTS"
   },
   {
+    "id": 100,
+    "name": "docker-host",
+    "vcpu": 1,
+    "ram_size_gb": 4,
+    "drive_size_gb": 32,
+    "ip_address": "10.0.0.201",
+    "operating_system": "Debian GNU/Linux 12"
+  },
+  {
     "id": 102,
     "name": "docker-production",
     "vcpu": 2,
@@ -25,12 +34,5 @@
     "drive_size_gb": 32,
     "ip_address": "10.0.0.206",
     "operating_system": "Debian GNU/Linux 12"
-  },
-  {
-    "id": 100,
-    "name": "docker-host",
-    "vcpu": 1,
-    "ram_size_gb": 4,
-    "drive_size_gb": 32
   }
 ]
