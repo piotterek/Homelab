@@ -1,35 +1,36 @@
 [
   {
-    "name": "docker-host",
-    "id": 100,
-    "operating_system": "Debian 12",
-    "role": "Hosting docker containers",
-    "vcpu": 2,
-    "ram_size_gb": 6,
-    "drive_size_gb": 32,
-    "network": "vmbr0",
-    "ip_address": "10.0.0.201"
-  },
-  {
-    "name": "web-server",
     "id": 101,
-    "operating_system": "Ubuntu 24.04",
-    "role": "Hosting web applications",
+    "name": "Jellyfin",
     "vcpu": 4,
     "ram_size_gb": 8,
-    "drive_size_gb": 64,
-    "network": "vmbr0",
-    "ip_address": "10.0.0.202"
+    "drive_size_gb": 32,
+    "ip_address": "10.0.0.209",
+    "operating_system": "Ubuntu 24.04.1 LTS"
   },
   {
-    "name": "db-server",
+    "id": 103,
+    "name": "web-srv",
+    "vcpu": 2,
+    "ram_size_gb": 4,
+    "drive_size_gb": 32,
+    "ip_address": "10.0.0.211",
+    "operating_system": "Ubuntu 24.04.1 LTS"
+  },
+  {
     "id": 102,
-    "operating_system": "Debian 12",
-    "role": "Database server (PostgreSQL)",
-    "vcpu": 4,
-    "ram_size_gb": 16,
-    "drive_size_gb": 128,
-    "network": "vmbr0",
-    "ip_address": "10.0.0.203"
+    "name": "docker-production",
+    "vcpu": 2,
+    "ram_size_gb": 4,
+    "drive_size_gb": 32,
+    "ip_address": "10.0.0.206",
+    "operating_system": "Debian GNU/Linux 12"
+  },
+  {
+    "id": 100,
+    "name": "docker-host",
+    "vcpu": 1,
+    "ram_size_gb": 4,
+    "drive_size_gb": 32
   }
 ]
