@@ -1,7 +1,7 @@
 [
   {
     "id": 103,
-    "name": "web-srv",
+    "name": "we-srv",
     "vcpu": 2,
     "ram_size_gb": 4,
     "drive_size_gb": 32,
