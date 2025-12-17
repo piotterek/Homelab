@@ -1,21 +1,12 @@
 [
   {
-    "id": 101,
-    "name": "Jellyfin",
-    "vcpu": 4,
-    "ram_size_gb": 8,
-    "drive_size_gb": 32,
-    "ip_address": "10.0.0.209",
-    "operating_system": "Ubuntu 24.04.1 LTS"
-  },
-  {
-    "id": 102,
-    "name": "docker-production",
+    "id": 103,
+    "name": "web-srv",
     "vcpu": 2,
     "ram_size_gb": 4,
     "drive_size_gb": 32,
-    "ip_address": "10.0.0.206",
-    "operating_system": "Debian GNU/Linux 12"
+    "ip_address": "10.0.0.211",
+    "operating_system": "Ubuntu 24.04.1 LTS"
   },
   {
     "id": 100,
@@ -27,12 +18,21 @@
     "operating_system": "Debian GNU/Linux 12"
   },
   {
-    "id": 103,
-    "name": "web-srv",
+    "id": 102,
+    "name": "docker-production",
     "vcpu": 2,
     "ram_size_gb": 4,
     "drive_size_gb": 32,
-    "ip_address": "10.0.0.211",
+    "ip_address": "10.0.0.206",
+    "operating_system": "Debian GNU/Linux 12"
+  },
+  {
+    "id": 101,
+    "name": "Jellyfin",
+    "vcpu": 4,
+    "ram_size_gb": 8,
+    "drive_size_gb": 32,
+    "ip_address": "10.0.0.209",
     "operating_system": "Ubuntu 24.04.1 LTS"
   }
 ]
