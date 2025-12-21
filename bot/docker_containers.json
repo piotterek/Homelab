@@ -1,52 +1,51 @@
 [
   {
-    "name": "Node-RED",
-    "description": "Tworzenie przepływów automatyzacji.",
-    "docker_run_command": "docker run -d --name nodered --network host -p 1880:1880 -v nodered_data:/data --restart unless-stopped nodered/node-red",
-    "port": 1880,
-    "host": "virtual machine 'docker-host'"
-  },
-  {
-    "name": "n8n",
-    "description": "Automatyzacje z AI",
-    "docker_run_command": "docker run -d --name n8n --network host -v ~/n8n/data:/home/node/.n8n -e N8N_SECURE_COOKIE=false -e N8N_HOST=10.0.0.201 -e N8N_PROTOCOL=http -e WEBHOOK_URL=http://10.0.0.201:5678/ -e EXECUTIONS_PROCESS=main --restart unless-stopped n8nio/n8n:latest",
+    "nazwa": "n8n",
+    "id": "4a279504161abb9ddc9650741ded45a05101da5b3e0a6a9def7e0ce52933eb5c",
+    "cli_id": "4a279504161a",
     "port": 5678,
-    "host": "virtual machine 'docker-host'"
+    "obraz": "n8n-wol"
   },
   {
-    "name": "Uptime Kuma",
-    "description": "Monitorowanie usług i serwerów z panelu webowego i powiadamianie.",
-    "docker_run_command": "docker run -d --restart=unless-stopped -p 3001:3001 -v uptime-kuma:/app/data -v /var/run/docker.sock:/var/run/docker.sock --name uptime-kuma louislam/uptime-kuma:1",
+    "nazwa": "uptime-kuma",
+    "id": "4673291eefa8fe1924b869f8a08847f0751f1487f5d602d7bae0e1122c05b07d",
+    "cli_id": "4673291eefa8",
     "port": 3001,
-    "host": "virtual machine 'docker-host'"
+    "obraz": "louislam/uptime-kuma:latest"
   },
   {
-    "name": "Homarr",
-    "description": "Tworzenie dashboardów",
-    "docker_run_command": "docker run --name homarr --restart unless-stopped -p 7575:7575 -v /var/run/docker.sock:/var/run/docker.sock -v ~/homarr/appdata:/appdata -e SECRET_ENCRYPTION_KEY='XYZ' -d ghcr.io/homarr-labs/homarr:latest",
-    "note": "do wygenerowania klucz użyj polecenia 'openssl rand -hex 32'",
-    "port": 7575,
-    "host": "virtual machine 'docker-host'"
-  },
-  {
-    "name": "Twingate Connector",
-    "description": "Twingate Connector do zdalnego dostępu do sieci homelab.",
-    "docker_run_command": null,
-    "port": null,
-    "host": "virtual machine 'docker-host'"
-  },
-  {
-    "name": "Cloudflare tunnel",
-    "description": "Udostepnianie usług do internetu",
-    "docker_run_command": null,
-    "port": null,
-    "host": "virtual machine 'docker-host'"
-  },
-  {
-    "name": "mosquitto",
-    "description": "broker mqtt",
-    "docker_run_command": "docker run -d --name mqtt-broker -p 1883:1883 -v ~/mosquitto/config/mosquitto.conf:/mosquitto/config/mosquitto.conf -v ~/mosquitto/data:/mosquitto/data -v ~/mosquitto/log:/mosquitto/log eclipse-mosquitto:2.0",
+    "nazwa": "mqtt-broker",
+    "id": "b51f83d8feabfe2d0aa36c68c8003df5cf774a89406989600c856886a7ab6e7f",
+    "cli_id": "b51f83d8feab",
     "port": 1883,
-    "host": "virtual machine 'docker-host'"
+    "obraz": "eclipse-mosquitto:2.0"
+  },
+  {
+    "nazwa": "nodered",
+    "id": "b0c1c91968966098353ebc27b4fa3b66feeab19c3bbb182eb6356820b21025c0",
+    "cli_id": "b0c1c9196896",
+    "port": 1880,
+    "obraz": "nodered/node-red"
+  },
+  {
+    "nazwa": "homarr",
+    "id": "81fa2944a8cfbdfc0d1b477f4e409e757af3022d642672c7e5e44ae4b47e4377",
+    "cli_id": "81fa2944a8cf",
+    "port": 7575,
+    "obraz": "ghcr.io/homarr-labs/homarr:latest"
+  },
+  {
+    "nazwa": "compassionate_lamarr",
+    "id": "df716b8008f4f5f1c65fd8c85fe9466f23d288e46a8d79c9889650df6fc83405",
+    "cli_id": "df716b8008f4",
+    "port": null,
+    "obraz": "cloudflare/cloudflared:latest"
+  },
+  {
+    "nazwa": "twingate-fast-macaque",
+    "id": "c53bfa59ea364dcb59ad1fc7f62db9890b6b7b7ecbd06de2598b8e9e04b22ecd",
+    "cli_id": "c53bfa59ea36",
+    "port": null,
+    "obraz": "twingate/connector:1"
   }
 ]
