@@ -4,7 +4,7 @@
     "id": "4a279504161abb9ddc9650741ded45a05101da5b3e0a6a9def7e0ce52933eb5c",
     "cli_id": "4a279504161a",
     "port": 5678,
-    "obraz": "n8n-wol"
+    "obraz": "n8n"
   },
   {
     "nazwa": "uptime-kuma",
