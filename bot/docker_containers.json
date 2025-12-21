@@ -8,7 +8,7 @@
   },
   {
     "nazwa": "homarr",
-    "id": "81fa2944a8cfbdfc0d1b477f4e409e757af3022d642672c7e5e44ae4b47e4377",
+    "id": "",
     "cli_id": "81fa2944a8cf",
     "port": 7575,
     "obraz": "ghcr.io/homarr-labs/homarr:latest"
