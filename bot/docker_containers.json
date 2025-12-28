@@ -1,51 +1,51 @@
 [
   {
-    "nazwa": "compassionate_lamarr",
-    "id": "df716b8008f4f5f1c65fd8c85fe9466f23d288e46a8d79c9889650df6fc83405",
-    "cli_id": "df716b8008f4",
+    "nazwa": "cloudflared",
+    "id": "9d6aac7a9294c1946acbbfa8a67b94b6946d0e62b479d4f34b6c4c9dec89db9d",
+    "cli_id": "9d6aac7a9294",
     "port": null,
     "obraz": "cloudflare/cloudflared:latest"
   },
   {
+    "nazwa": "dockge-dockge-1",
+    "id": "b46108400b955148c87ec5e4111ff80af5c1e70e5f6e6bbd82e9c5e283474097",
+    "cli_id": "b46108400b95",
+    "port": 5001,
+    "obraz": "louislam/dockge:1"
+  },
+  {
     "nazwa": "homarr",
-    "id": "81fa2944a8cfbdfc0d1b477f4e409e757af3022d642672c7e5e44ae4b47e4377",
-    "cli_id": "81fa2944a8cf",
+    "id": "2790554216a91e6590e142c7d39bf91d5482f215625527c4b99c8c162254750c",
+    "cli_id": "2790554216a9",
     "port": 7575,
     "obraz": "ghcr.io/homarr-labs/homarr:latest"
   },
   {
-    "nazwa": "mqtt-broker",
-    "id": "b51f83d8feabfe2d0aa36c68c8003df5cf774a89406989600c856886a7ab6e7f",
-    "cli_id": "b51f83d8feab",
-    "port": 1883,
-    "obraz": "eclipse-mosquitto:2.0"
-  },
-  {
     "nazwa": "n8n",
-    "id": "4a279504161abb9ddc9650741ded45a05101da5b3e0a6a9def7e0ce52933eb5c",
-    "cli_id": "4a279504161a",
+    "id": "c633dc527ec2c39d460567c618686db4f2dcf5a037e0a0ffd891de90c3b61c1b",
+    "cli_id": "c633dc527ec2",
     "port": 5678,
-    "obraz": "n8n-wol"
+    "obraz": "n8n-n8n"
   },
   {
-    "nazwa": "nodered",
-    "id": "b0c1c91968966098353ebc27b4fa3b66feeab19c3bbb182eb6356820b21025c0",
-    "cli_id": "b0c1c9196896",
+    "nazwa": "node-red",
+    "id": "ec2e6d68e682bd08db8f7593c3e041372fae7d77df4ba4fcd5bf59e104307f29",
+    "cli_id": "ec2e6d68e682",
     "port": 1880,
-    "obraz": "nodered/node-red"
+    "obraz": "nodered/node-red:latest"
   },
   {
-    "nazwa": "twingate-fast-macaque",
-    "id": "c53bfa59ea364dcb59ad1fc7f62db9890b6b7b7ecbd06de2598b8e9e04b22ecd",
-    "cli_id": "c53bfa59ea36",
+    "nazwa": "twingate-connector",
+    "id": "2035ac9762d1d7fbb52e07162b2c030b2219189f18eaf5f9713a672e6ded3f5b",
+    "cli_id": "2035ac9762d1",
     "port": null,
     "obraz": "twingate/connector:1"
   },
   {
     "nazwa": "uptime-kuma",
-    "id": "4673291eefa8fe1924b869f8a08847f0751f1487f5d602d7bae0e1122c05b07d",
-    "cli_id": "4673291eefa8",
+    "id": "87e3a3407530a2db419ca3a5933a7fc91b0baa9a753cc049e25390f0adc86c46",
+    "cli_id": "87e3a3407530",
     "port": 3001,
-    "obraz": "louislam/uptime-kuma:latest"
+    "obraz": "louislam/uptime-kuma:2"
   }
 ]
