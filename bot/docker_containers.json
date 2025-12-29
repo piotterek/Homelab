@@ -1,5 +1,12 @@
 [
   {
+    "nazwa": "checkmk",
+    "id": "6b8d288952ec84980467077571cdfdc2efdf4f9847f421e29b5226bf0bca9ece",
+    "cli_id": "6b8d288952ec",
+    "port": 2001,
+    "obraz": "checkmk/check-mk-raw:2.3.0-latest"
+  },
+  {
     "nazwa": "cloudflared",
     "id": "9d6aac7a9294c1946acbbfa8a67b94b6946d0e62b479d4f34b6c4c9dec89db9d",
     "cli_id": "9d6aac7a9294",
@@ -12,6 +19,13 @@
     "cli_id": "b46108400b95",
     "port": 5001,
     "obraz": "louislam/dockge:1"
+  },
+  {
+    "nazwa": "gatus",
+    "id": "aa10529e3042f43f7f37afa71653010fc92c854577128b264109a3292ad3936e",
+    "cli_id": "aa10529e3042",
+    "port": 6001,
+    "obraz": "twinproduction/gatus:latest"
   },
   {
     "nazwa": "homarr",
