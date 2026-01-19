@@ -56,6 +56,13 @@
     "obraz": "twingate/connector:1"
   },
   {
+    "nazwa": "uptime-kuma-api",
+    "id": "9aa0e49ad30d13b2d9f1765120b5098e8ced0a65f88118bab0c8f709e628b014",
+    "cli_id": "9aa0e49ad30d",
+    "port": 3002,
+    "obraz": "medaziz11/uptimekuma_restapi"
+  },
+  {
     "nazwa": "uptime-kuma",
     "id": "87e3a3407530a2db419ca3a5933a7fc91b0baa9a753cc049e25390f0adc86c46",
     "cli_id": "87e3a3407530",
