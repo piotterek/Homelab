@@ -49,6 +49,13 @@
     "obraz": "nodered/node-red:latest"
   },
   {
+    "nazwa": "statping",
+    "id": "d861a98ff87b9369f2b54b2b13ee5584e7a7feb81ad88abcf2d6ffaad5893327",
+    "cli_id": "d861a98ff87b",
+    "port": 4001,
+    "obraz": "adamboutcher/statping-ng:latest"
+  },
+  {
     "nazwa": "twingate-connector",
     "id": "2035ac9762d1d7fbb52e07162b2c030b2219189f18eaf5f9713a672e6ded3f5b",
     "cli_id": "2035ac9762d1",
