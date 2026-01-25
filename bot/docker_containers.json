@@ -35,6 +35,13 @@
     "obraz": "ghcr.io/homarr-labs/homarr:latest"
   },
   {
+    "nazwa": "mysql_db",
+    "id": "0d1c7b1c5899a529e4c5af06a60426f06296c0d30a1d48c03a5ed853a86dad98",
+    "cli_id": "0d1c7b1c5899",
+    "port": 3306,
+    "obraz": "mysql:8.0"
+  },
+  {
     "nazwa": "n8n",
     "id": "c633dc527ec2c39d460567c618686db4f2dcf5a037e0a0ffd891de90c3b61c1b",
     "cli_id": "c633dc527ec2",
@@ -47,6 +54,13 @@
     "cli_id": "ec2e6d68e682",
     "port": 1880,
     "obraz": "nodered/node-red:latest"
+  },
+  {
+    "nazwa": "phpmyadmin_ui",
+    "id": "e2a678733b442150da3a145a7da03c5198f419ffc82860d6840ea1d3e62ec03b",
+    "cli_id": "e2a678733b44",
+    "port": 8080,
+    "obraz": "phpmyadmin:latest"
   },
   {
     "nazwa": "statping",
