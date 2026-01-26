@@ -5,7 +5,6 @@ Lekki system do zdalnego zarządzania zasilaniem urządzeń w sieci lokalnej, wy
 ## Architektura systemu
 
 1. Client: prosta aplikacja komunikująca się z Rest API.
- 
   👉[Gotowa aplikacja webowa](index.html).
 ---
 2. Logic (n8n):
