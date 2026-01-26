@@ -5,6 +5,7 @@ Lekki system do zdalnego zarządzania zasilaniem urządzeń w sieci lokalnej, wy
 ## Architektura systemu
 
 1. Client: prosta aplikacja komunikująca się z Rest API.
+ 
  👉[Gotowa aplikacja webowa](index.html).
 4. Logic (n8n):
 - Endpointy REST (GET/POST/DELETE).
@@ -16,7 +17,7 @@ Lekki system do zdalnego zarządzania zasilaniem urządzeń w sieci lokalnej, wy
   👉[Dokumentacja Rest API](api_docs.md) (jeśli chcesz zbudować swojego klienta).
 3. Storage (MySQL): Przechowuje definicje hostów.
 
-  👉[Plik .sql z bazą danych](mac.sql)
+   👉[Plik .sql z bazą danych](mac.sql)
 
 ## Szybka konfiguracja
 
