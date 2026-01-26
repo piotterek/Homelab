@@ -6,16 +6,17 @@ Lekki system do zdalnego zarządzania zasilaniem urządzeń w sieci lokalnej, wy
 
 1. Client: prosta aplikacja komunikująca się z Rest API.
 
-   Gotowa aplikacja webowa jest [tutaj](index.html).
+   👉[Gotowa aplikacja webowa](index.html).
 3. Logic (n8n):
 - Endpointy REST (GET/POST/DELETE).
 - Logika walidacji i pobierania danych z DB.
 - Wysyłanie pakietów UDP (Magic Packet).
 
-  Workflow jest [tu](workflow.json), a dokumentacja Rest API [tu](api_docs.md) (jeśli chcesz zbudować swojego klienta).
+  👉[Workflow n8n](workflow.json)
+  👉[Dokumentacja Rest API](api_docs.md) (jeśli chcesz zbudować swojego klienta).
 3. Storage (MySQL): Przechowuje definicje hostów.
 
-  Plik .sql z bazą danych pobierzesz [tutaj](mac.sql)
+  👉[Plik .sql z bazą danych](mac.sql)
 
 ## Szybka konfiguracja
 
