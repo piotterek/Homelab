@@ -1,0 +1,382 @@
+{
+  "name": "WoL",
+  "nodes": [
+    {
+      "parameters": {
+        "operation": "select",
+        "table": {
+          "__rl": true,
+          "value": "mac",
+          "mode": "list",
+          "cachedResultName": "mac"
+        },
+        "returnAll": true,
+        "options": {}
+      },
+      "type": "n8n-nodes-base.mySql",
+      "typeVersion": 2.5,
+      "position": [
+        1440,
+        192
+      ],
+      "id": "55e38781-80f8-40a7-a92c-b02b2472af0b",
+      "name": "Select rows from a table"
+    },
+    {
+      "parameters": {
+        "respondWith": "json",
+        "responseBody": "={{ JSON.stringify($('Select rows from a table').all().map(item => item.json)) }}",
+        "options": {
+          "responseCode": 200
+        }
+      },
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1.5,
+      "position": [
+        1648,
+        192
+      ],
+      "id": "b529b3e9-6845-4875-87b6-2658a6388c62",
+      "name": "Respond to Webhook"
+    },
+    {
+      "parameters": {
+        "table": {
+          "__rl": true,
+          "value": "mac",
+          "mode": "list",
+          "cachedResultName": "mac"
+        },
+        "dataMode": "defineBelow",
+        "valuesToSend": {
+          "values": [
+            {
+              "column": "name",
+              "value": "={{ $json.body.name }}"
+            },
+            {
+              "column": "mac",
+              "value": "={{ $json.body.mac }}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.mySql",
+      "typeVersion": 2.5,
+      "position": [
+        1440,
+        64
+      ],
+      "id": "a9549a8b-4803-477b-8a85-615588c5c3f5",
+      "name": "Insert rows in a table"
+    },
+    {
+      "parameters": {
+        "respondWith": "json",
+        "responseBody": "{\"status\": \"success\", \"message\": \"Host added\"}",
+        "options": {
+          "responseCode": 201
+        }
+      },
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1.5,
+      "position": [
+        1648,
+        64
+      ],
+      "id": "9037130c-be08-4dbc-a486-203217454423",
+      "name": "Respond to Webhook1"
+    },
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "add",
+        "responseMode": "responseNode",
+        "options": {
+          "allowedOrigins": "*"
+        }
+      },
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2.1,
+      "position": [
+        1232,
+        64
+      ],
+      "id": "21529b52-2a81-41a5-b371-a138ad83699e",
+      "name": "Add new host",
+      "webhookId": "14747ae6-29a7-4d10-a567-32416191d0e8"
+    },
+    {
+      "parameters": {
+        "path": "hosts",
+        "responseMode": "responseNode",
+        "options": {
+          "allowedOrigins": "*"
+        }
+      },
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2.1,
+      "position": [
+        1232,
+        192
+      ],
+      "id": "c6f39d01-8947-4823-9d47-72a516584191",
+      "name": "Get hosts list",
+      "webhookId": "32a088dc-82ad-4acf-8bcf-d4ab9d74761f"
+    },
+    {
+      "parameters": {
+        "httpMethod": "DELETE",
+        "path": "delete/:id",
+        "responseMode": "responseNode",
+        "options": {
+          "allowedOrigins": "*"
+        }
+      },
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2.1,
+      "position": [
+        1232,
+        320
+      ],
+      "id": "19f52c56-ab4b-418b-8b22-3a25cd36254e",
+      "name": "Delete host by ID",
+      "webhookId": "000a2553-53d8-4246-89c1-a39cfc7098a6"
+    },
+    {
+      "parameters": {
+        "operation": "deleteTable",
+        "table": {
+          "__rl": true,
+          "value": "mac",
+          "mode": "list",
+          "cachedResultName": "mac"
+        },
+        "deleteCommand": "delete",
+        "where": {
+          "values": [
+            {
+              "column": "id",
+              "value": "={{ $json.params.id }}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.mySql",
+      "typeVersion": 2.5,
+      "position": [
+        1440,
+        320
+      ],
+      "id": "4f0f46f9-c028-4a6e-a1ba-5773d19b9e72",
+      "name": "Delete table or rows"
+    },
+    {
+      "parameters": {
+        "respondWith": "json",
+        "responseBody": "{\"status\": \"success\", \"message\": \"Host deleted\"}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1.5,
+      "position": [
+        1648,
+        320
+      ],
+      "id": "057418a1-fc8e-429e-a071-7def6b7a6dd8",
+      "name": "Respond to Webhook2"
+    },
+    {
+      "parameters": {
+        "operation": "select",
+        "table": {
+          "__rl": true,
+          "value": "mac",
+          "mode": "list",
+          "cachedResultName": "mac"
+        },
+        "where": {
+          "values": [
+            {
+              "column": "id",
+              "value": "={{ $json.params.id }}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.mySql",
+      "typeVersion": 2.5,
+      "position": [
+        1440,
+        448
+      ],
+      "id": "d824dc51-b7ff-4db0-a92b-ba9576fa3cab",
+      "name": "Select rows from a table1"
+    },
+    {
+      "parameters": {
+        "macAddress": "={{ $json.mac }}",
+        "broadcastIp": "10.0.0.255"
+      },
+      "type": "n8n-nodes-wake-on-lan.wakeOnLan",
+      "typeVersion": 1,
+      "position": [
+        1648,
+        448
+      ],
+      "id": "7b808fa4-de43-4185-bdba-1c06bb8e6d80",
+      "name": "Wake on LAN"
+    },
+    {
+      "parameters": {
+        "respondWith": "json",
+        "responseBody": "={\"status\": \"success\", \"message\": \"Sent magic packet to {{ $('Select rows from a table1').item.json.mac }}\"}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1.5,
+      "position": [
+        1856,
+        448
+      ],
+      "id": "0cd4cc31-f4e7-4f1c-b3c7-fe9eeb4a4eb2",
+      "name": "Respond to Webhook3"
+    },
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "send/:id",
+        "responseMode": "responseNode",
+        "options": {
+          "allowedOrigins": "*"
+        }
+      },
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2.1,
+      "position": [
+        1232,
+        448
+      ],
+      "id": "81d3da35-4055-488e-abc8-a4905017ff56",
+      "name": "Send magic packet by ID",
+      "webhookId": "f952a5a1-208b-4414-8c75-ba6ee7670e15"
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "Select rows from a table": {
+      "main": [
+        [
+          {
+            "node": "Respond to Webhook",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Insert rows in a table": {
+      "main": [
+        [
+          {
+            "node": "Respond to Webhook1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Add new host": {
+      "main": [
+        [
+          {
+            "node": "Insert rows in a table",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Get hosts list": {
+      "main": [
+        [
+          {
+            "node": "Select rows from a table",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Delete host by ID": {
+      "main": [
+        [
+          {
+            "node": "Delete table or rows",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Delete table or rows": {
+      "main": [
+        [
+          {
+            "node": "Respond to Webhook2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Select rows from a table1": {
+      "main": [
+        [
+          {
+            "node": "Wake on LAN",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Wake on LAN": {
+      "main": [
+        [
+          {
+            "node": "Respond to Webhook3",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Send magic packet by ID": {
+      "main": [
+        [
+          {
+            "node": "Select rows from a table1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "availableInMCP": false
+  },
+  "versionId": "32e860fb-839c-4940-8e3a-46d243417dec",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "c3f220431dd12c0fdcaf328664d76958d840df3dac96f25998924181f335efb1"
+  },
+  "id": "tMB6EYqak6jgaTuh",
+  "tags": []
+}
