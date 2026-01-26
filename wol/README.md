@@ -1,6 +1,6 @@
 # Wake on LAN
 
-Lekki system do zdalnego zarządzania zasilaniem urządzeń w sieci lokalnej, wykorzystujący **n8n** jako silnik backendowy i orkiestrator zapytań do bazy **MySQL**.
+Lekki system do zdalnego włączania w sieci lokalnej, wykorzystujący **n8n** jako silnik backendowy i orkiestrator zapytań do bazy **MySQL**.
 
 ## Architektura systemu
 
