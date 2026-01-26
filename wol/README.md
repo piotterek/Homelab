@@ -24,5 +24,6 @@ Lekki system do zdalnego włączania w sieci lokalnej, wykorzystujący **n8n** j
 ## Szybka konfiguracja
 
 - Zaimportuj tabelę z pliku ```mac.sql``` do swojej bazy MySQL.
+- Zainstaluj w n8n node ```n8n-nodes-wake-on-lan``` ([dokumentacja pakietu](https://www.npmjs.com/package/n8n-nodes-wake-on-lan))
 - Wgraj ```workflow.json``` do n8n i skonfiguruj MySQL Credentials.
 - W pliku ```index.html``` (lub pliku swojego klienta) podaj adres URL odpowiedniego webhooka n8n.
