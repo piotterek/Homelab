@@ -219,7 +219,7 @@
     {
       "parameters": {
         "macAddress": "={{ $json.mac }}",
-        "broadcastIp": "10.0.0.255"
+        "broadcastIp": "255.255.255.255"
       },
       "type": "n8n-nodes-wake-on-lan.wakeOnLan",
       "typeVersion": 1,
