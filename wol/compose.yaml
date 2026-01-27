@@ -1,0 +1,17 @@
+version: "3.8"
+services:
+  n8n:
+    build: .
+    container_name: n8n
+    restart: unless-stopped
+    network_mode: host # Ważne: korzysta bezpośrednio z IP hosta
+    environment:
+      - WEBHOOK_URL=http://{adres IP instancji n8n}:{port instancji n8n, domyślnie 5678}/
+      - N8N_SECURE_COOKIE=false
+      - N8N_USER_FOLDER=/home/node/
+      - N8N_HOST={adres_ip_instancji_n8n}
+      - N8N_PROTOCOL=http
+      - NODE_ENV=production
+      - N8N_RELEASE_TYPE=stable
+    volumes:
+      - ./data:/home/node/.n8n
