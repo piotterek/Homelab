@@ -13,8 +13,6 @@ Lekki system do zdalnego włączania w sieci lokalnej, wykorzystujący **n8n** j
 - Logika walidacji i pobierania danych z DB.
 - Wysyłanie pakietów UDP (Magic Packet).
 
-  👉[Plik compose.yaml](compose.yaml), do instalacji n8n w docker compose.
-
   👉[Workflow n8n](workflow.json)
 
   👉[Dokumentacja Rest API](api_docs.md) (jeśli chcesz zbudować swojego klienta).
@@ -23,6 +21,9 @@ Lekki system do zdalnego włączania w sieci lokalnej, wykorzystujący **n8n** j
 
    👉[Plik .sql z bazą danych](mac.sql)
 ---
+
+   👉[Plik compose.yaml](compose.yaml) do instalacji n8n, bazy danych MySQL i UI phpMyAdmin w docker compose.
+
 ## Szybka konfiguracja
 
 - Zaimportuj tabelę z pliku `mac.sql` do swojej bazy MySQL.
