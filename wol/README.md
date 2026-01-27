@@ -13,6 +13,8 @@ Lekki system do zdalnego włączania w sieci lokalnej, wykorzystujący **n8n** j
 - Logika walidacji i pobierania danych z DB.
 - Wysyłanie pakietów UDP (Magic Packet).
 
+  👉[Plik compose.yaml](compose.yaml), do instalacji n8n w docker compose.
+
   👉[Workflow n8n](workflow.json)
 
   👉[Dokumentacja Rest API](api_docs.md) (jeśli chcesz zbudować swojego klienta).
@@ -23,8 +25,8 @@ Lekki system do zdalnego włączania w sieci lokalnej, wykorzystujący **n8n** j
 ---
 ## Szybka konfiguracja
 
-- Zaimportuj tabelę z pliku ```mac.sql``` do swojej bazy MySQL.
-- Zainstaluj w n8n node ```n8n-nodes-wake-on-lan``` ([dokumentacja pakietu](https://www.npmjs.com/package/n8n-nodes-wake-on-lan))
-- Wgraj ```workflow.json``` do n8n i skonfiguruj MySQL Credentials.
+- Zaimportuj tabelę z pliku `mac.sql` do swojej bazy MySQL.
+- Zainstaluj w n8n node `n8n-nodes-wake-on-lan` ([dokumentacja pakietu](https://www.npmjs.com/package/n8n-nodes-wake-on-lan))
+- Wgraj `workflow.json` do n8n i skonfiguruj MySQL Credentials.
 - W zainstalowanym nodzie `Wake on LAN` ustaw swój adres IP broadcast.
-- W pliku ```index.html``` (lub pliku swojego klienta) podaj adres URL odpowiedniego webhooka n8n.
+- W pliku `index.html` (lub pliku swojego klienta) podaj adres URL odpowiedniego webhooka n8n.
