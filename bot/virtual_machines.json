@@ -42,6 +42,15 @@
     "ram_size_gb": 4,
     "drive_size_gb": 32,
     "ip_address": "10.0.0.223",
-    "operating_system": "Home Assistant OS 16.3"
+    "operating_system": "Home Assistant OS 17.0"
+  },
+  {
+    "id": 105,
+    "name": "ollama",
+    "vcpu": 8,
+    "ram_size_gb": 8,
+    "drive_size_gb": 32,
+    "ip_address": "10.0.0.229",
+    "operating_system": "Ubuntu 24.04.1 LTS"
   }
 ]
