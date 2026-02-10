@@ -56,6 +56,13 @@
     "obraz": "nodered/node-red:latest"
   },
   {
+    "nazwa": "open-webui",
+    "id": "8921259e456b5c8114adfe04378c1ff234d3fbfdfef22f2d7b4c42c0a04d2904",
+    "cli_id": "8921259e456b",
+    "port": 1010,
+    "obraz": "ghcr.io/open-webui/open-webui:main"
+  },
+  {
     "nazwa": "phpmyadmin_ui",
     "id": "e2a678733b442150da3a145a7da03c5198f419ffc82860d6840ea1d3e62ec03b",
     "cli_id": "e2a678733b44",
