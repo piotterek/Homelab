@@ -3,7 +3,7 @@
     "nazwa": "checkmk",
     "id": "6b8d288952ec84980467077571cdfdc2efdf4f9847f421e29b5226bf0bca9ece",
     "cli_id": "6b8d288952ec",
-    "port": 2001,
+    "port": 5000,
     "obraz": "checkmk/check-mk-raw:2.3.0-latest"
   },
   {
@@ -24,7 +24,7 @@
     "nazwa": "gatus",
     "id": "aa10529e3042f43f7f37afa71653010fc92c854577128b264109a3292ad3936e",
     "cli_id": "aa10529e3042",
-    "port": 6001,
+    "port": 8080,
     "obraz": "twinproduction/gatus:latest"
   },
   {
@@ -73,7 +73,7 @@
     "nazwa": "statping",
     "id": "d861a98ff87b9369f2b54b2b13ee5584e7a7feb81ad88abcf2d6ffaad5893327",
     "cli_id": "d861a98ff87b",
-    "port": 4001,
+    "port": 8080,
     "obraz": "adamboutcher/statping-ng:latest"
   },
   {
