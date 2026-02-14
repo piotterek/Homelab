@@ -49,6 +49,13 @@
     "obraz": "n8n-n8n"
   },
   {
+    "nazwa": "nginx-proxy-app-1",
+    "id": "211a848607008bd0b21c9dacfedb8a7f1045c99945ede0ed01f66325c321e976",
+    "cli_id": "211a84860700",
+    "port": 443,
+    "obraz": "jc21/nginx-proxy-manager:latest"
+  },
+  {
     "nazwa": "node-red",
     "id": "ec2e6d68e682bd08db8f7593c3e041372fae7d77df4ba4fcd5bf59e104307f29",
     "cli_id": "ec2e6d68e682",
