@@ -48,7 +48,7 @@
     "id": 105,
     "name": "ollama",
     "vcpu": 12,
-    "ram_size_gb": 8,
+    "ram_size_gb": 16,
     "drive_size_gb": 64,
     "ip_address": "10.0.0.229",
     "operating_system": "Ubuntu 24.04.1 LTS"
