@@ -3,8 +3,8 @@
     "id": 100,
     "name": "docker-host",
     "vcpu": 2,
-    "ram_size_gb": 4,
-    "drive_size_gb": 32,
+    "ram_size_gb": 6,
+    "drive_size_gb": 48,
     "ip_address": "10.0.0.201",
     "operating_system": "Debian GNU/Linux 12"
   },
