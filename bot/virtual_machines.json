@@ -2,7 +2,7 @@
   {
     "id": 100,
     "name": "docker-host",
-    "vcpu": 4,
+    "vcpu": 2,
     "ram_size_gb": 6,
     "drive_size_gb": 48,
     "ip_address": "10.0.0.201",
