@@ -12,7 +12,7 @@
     "id": 101,
     "name": "Jellyfin",
     "vcpu": 4,
-    "ram_size_gb": 8,
+    "ram_size_gb": 16,
     "drive_size_gb": 32,
     "ip_address": "10.0.0.200",
     "operating_system": "Ubuntu 24.04.1 LTS"
@@ -22,18 +22,14 @@
     "name": "docker-production",
     "vcpu": 2,
     "ram_size_gb": 4,
-    "drive_size_gb": 32,
-    "ip_address": "10.0.0.206",
-    "operating_system": "Debian GNU/Linux 12"
+    "drive_size_gb": 32
   },
   {
     "id": 103,
     "name": "web-srv",
     "vcpu": 2,
     "ram_size_gb": 4,
-    "drive_size_gb": 32,
-    "ip_address": "10.0.0.202",
-    "operating_system": "Ubuntu 24.04.1 LTS"
+    "drive_size_gb": 32
   },
   {
     "id": 104,
