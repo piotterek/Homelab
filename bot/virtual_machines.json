@@ -22,14 +22,18 @@
     "name": "docker-production",
     "vcpu": 2,
     "ram_size_gb": 4,
-    "drive_size_gb": 32
+    "drive_size_gb": 32,
+    "ip_address": "10.0.0.206",
+    "operating_system": "Debian GNU/Linux 12"
   },
   {
     "id": 103,
     "name": "web-srv",
     "vcpu": 2,
     "ram_size_gb": 4,
-    "drive_size_gb": 32
+    "drive_size_gb": 32,
+    "ip_address": "10.0.0.201",
+    "operating_system": "Ubuntu 24.04.1 LTS"
   },
   {
     "id": 104,
