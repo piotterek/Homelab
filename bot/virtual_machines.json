@@ -32,7 +32,7 @@
     "vcpu": 2,
     "ram_size_gb": 4,
     "drive_size_gb": 32,
-    "ip_address": "10.0.0.201",
+    "ip_address": "10.0.0.202",
     "operating_system": "Ubuntu 24.04.1 LTS"
   },
   {
