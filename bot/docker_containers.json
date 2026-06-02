@@ -82,5 +82,12 @@
     "cli_id": "87e3a3407530",
     "port": 3001,
     "obraz": "louislam/uptime-kuma:2"
+  },
+  {
+    "nazwa": "veilo-chat-app",
+    "id": "0673e42bbc6ed2d5a4ed6972b8781020e449231c463b9896ba7e157249ebf318",
+    "cli_id": "0673e42bbc6e",
+    "port": 3000,
+    "obraz": "veilo-deploy-veilo-chat"
   }
 ]
