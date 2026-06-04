@@ -57,8 +57,8 @@
   },
   {
     "nazwa": "phpmyadmin_ui",
-    "id": "e2a678733b442150da3a145a7da03c5198f419ffc82860d6840ea1d3e62ec03b",
-    "cli_id": "e2a678733b44",
+    "id": "405c4efca2419e0c315250d58c4cf837a5c84986284f5f3c119334bc8a4a9487",
+    "cli_id": "405c4efca241",
     "port": 8080,
     "obraz": "phpmyadmin:latest"
   },
