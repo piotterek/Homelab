@@ -85,9 +85,9 @@
   },
   {
     "nazwa": "veilo-chat-app",
-    "id": "0673e42bbc6ed2d5a4ed6972b8781020e449231c463b9896ba7e157249ebf318",
-    "cli_id": "0673e42bbc6e",
+    "id": "6684de03284b239ac4c88b3abc99eb9cce10781864b91f86fab415e7ea98e821",
+    "cli_id": "6684de03284b",
     "port": 3000,
-    "obraz": "veilo-deploy-veilo-chat"
+    "obraz": "veilo-veilo-chat"
   }
 ]
