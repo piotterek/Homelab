@@ -52,7 +52,7 @@
     "nazwa": "open-webui",
     "id": "8921259e456b5c8114adfe04378c1ff234d3fbfdfef22f2d7b4c42c0a04d2904",
     "cli_id": "8921259e456b",
-    "port": 8080,
+    "port": 1010,
     "obraz": "ghcr.io/open-webui/open-webui:main"
   },
   {
