@@ -64,8 +64,8 @@
   },
   {
     "nazwa": "twingate-connector",
-    "id": "2035ac9762d1d7fbb52e07162b2c030b2219189f18eaf5f9713a672e6ded3f5b",
-    "cli_id": "2035ac9762d1",
+    "id": "f75e2a38414a44781c0c8f34d6852d033e487ecc071f8ff53af4e3462b129b13",
+    "cli_id": "f75e2a38414a",
     "port": null,
     "obraz": "twingate/connector:1"
   },
