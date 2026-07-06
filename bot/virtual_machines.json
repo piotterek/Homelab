@@ -13,9 +13,7 @@
     "name": "Jellyfin",
     "vcpu": 4,
     "ram_size_gb": 12,
-    "drive_size_gb": 32,
-    "ip_address": "10.0.0.201",
-    "operating_system": "Ubuntu 24.04.1 LTS"
+    "drive_size_gb": 32
   },
   {
     "id": 102,
