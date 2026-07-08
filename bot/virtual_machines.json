@@ -54,7 +54,7 @@
   {
     "id": 106,
     "name": "tor-website",
-    "vcpu": 12,
+    "vcpu": 1,
     "ram_size_gb": 2,
     "drive_size_gb": 8,
     "ip_address": "10.0.0.213",
