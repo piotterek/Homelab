@@ -1,5 +1,12 @@
 [
   {
+    "nazwa": "caldav-mcp",
+    "id": "3b957a4b389a87ab87fc43d08fee3e834697a8a194a072d0a8105c861185d5b9",
+    "cli_id": "3b957a4b389a",
+    "port": 8100,
+    "obraz": "ghcr.io/lukegskw/caldav-mcp:latest"
+  },
+  {
     "nazwa": "cloudflared",
     "id": "9d6aac7a9294c1946acbbfa8a67b94b6946d0e62b479d4f34b6c4c9dec89db9d",
     "cli_id": "9d6aac7a9294",
@@ -14,13 +21,6 @@
     "obraz": "louislam/dockge:1"
   },
   {
-    "nazwa": "homarr",
-    "id": "2790554216a91e6590e142c7d39bf91d5482f215625527c4b99c8c162254750c",
-    "cli_id": "2790554216a9",
-    "port": 7575,
-    "obraz": "ghcr.io/homarr-labs/homarr:latest"
-  },
-  {
     "nazwa": "mysql_db",
     "id": "0d1c7b1c5899a529e4c5af06a60426f06296c0d30a1d48c03a5ed853a86dad98",
     "cli_id": "0d1c7b1c5899",
@@ -29,17 +29,10 @@
   },
   {
     "nazwa": "n8n",
-    "id": "c633dc527ec2c39d460567c618686db4f2dcf5a037e0a0ffd891de90c3b61c1b",
-    "cli_id": "c633dc527ec2",
+    "id": "bdadc1e0f0b20f000f7852af94441c82af1f994909bf4e2cc1d6343abc850d62",
+    "cli_id": "bdadc1e0f0b2",
     "port": 5678,
     "obraz": "n8n-n8n"
-  },
-  {
-    "nazwa": "nginx-proxy-app-1",
-    "id": "211a848607008bd0b21c9dacfedb8a7f1045c99945ede0ed01f66325c321e976",
-    "cli_id": "211a84860700",
-    "port": 443,
-    "obraz": "jc21/nginx-proxy-manager:latest"
   },
   {
     "nazwa": "node-red",
@@ -47,13 +40,6 @@
     "cli_id": "ec2e6d68e682",
     "port": 1880,
     "obraz": "nodered/node-red:latest"
-  },
-  {
-    "nazwa": "open-webui",
-    "id": "8921259e456b5c8114adfe04378c1ff234d3fbfdfef22f2d7b4c42c0a04d2904",
-    "cli_id": "8921259e456b",
-    "port": 1010,
-    "obraz": "ghcr.io/open-webui/open-webui:main"
   },
   {
     "nazwa": "phpmyadmin_ui",
@@ -70,6 +56,13 @@
     "obraz": "twingate/connector:1"
   },
   {
+    "nazwa": "uptime-gizmo-uptime-gizmo-1",
+    "id": "95d52cab4a34c58090c6764208bd04a25d95f1f371cb025a54bc7b2ff81449ad",
+    "cli_id": "95d52cab4a34",
+    "port": 3030,
+    "obraz": "starit/uptime-gizmo:beta"
+  },
+  {
     "nazwa": "uptime-kuma-api",
     "id": "e1330be76da51a713d00246b3628467b8146de4337f7c94f405cc9b58d87a8c4",
     "cli_id": "e1330be76da5",
@@ -77,17 +70,17 @@
     "obraz": "medaziz11/uptimekuma_restapi"
   },
   {
-    "nazwa": "uptime-kuma",
-    "id": "87e3a3407530a2db419ca3a5933a7fc91b0baa9a753cc049e25390f0adc86c46",
-    "cli_id": "87e3a3407530",
-    "port": 3001,
-    "obraz": "louislam/uptime-kuma:2"
+    "nazwa": "uptime-kuma-rest-uptime-kuma-1",
+    "id": "ee62a3cf75b12b1fae4a97c4186946e901c9a75826f473aea7b99e6296acffe1",
+    "cli_id": "ee62a3cf75b1",
+    "port": 3003,
+    "obraz": "uptime-kuma-rest:3.0.0-beta.0"
   },
   {
-    "nazwa": "veilo-chat-app",
-    "id": "6684de03284b239ac4c88b3abc99eb9cce10781864b91f86fab415e7ea98e821",
-    "cli_id": "6684de03284b",
-    "port": 3000,
-    "obraz": "veilo-veilo-chat"
+    "nazwa": "uptime-kuma",
+    "id": "cd716615ec7e245864cc8e82c3a278940a5fbe973fec313c00f120a6728a2128",
+    "cli_id": "cd716615ec7e",
+    "port": 3001,
+    "obraz": "louislam/uptime-kuma:2"
   }
 ]
