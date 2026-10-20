@@ -29,8 +29,8 @@
   },
   {
     "nazwa": "n8n",
-    "id": "bdadc1e0f0b20f000f7852af94441c82af1f994909bf4e2cc1d6343abc850d62",
-    "cli_id": "bdadc1e0f0b2",
+    "id": "18f5918c8d0b5fc62e99cc07a9343fee98e58c25321be44ba549fff5c3ca57cb",
+    "cli_id": "18f5918c8d0b",
     "port": 5678,
     "obraz": "n8n-n8n"
   },
@@ -50,8 +50,8 @@
   },
   {
     "nazwa": "twingate-connector",
-    "id": "f75e2a38414a44781c0c8f34d6852d033e487ecc071f8ff53af4e3462b129b13",
-    "cli_id": "f75e2a38414a",
+    "id": "31507799424bf72b52ae1dd00d13e57389da09c7ca3af84fe5813cc815fdfe55",
+    "cli_id": "31507799424b",
     "port": null,
     "obraz": "twingate/connector:1"
   },
